@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <head>
+<script>
+var anxiety = 0;
+function upAnxiety() {
+    anxiety = anxiety + 1;
+    document.getElementById("demo").innerHTML = "You have symptoms of anxiety.";
+    if (anxiety > 1){
+        document.getElementById("demo2").innerHTML = "You probably have anxiety.";
+    }
+}
+</script>
     <Style>
                 h1 {text-align: center;}
                 h2 {text-align: center;}
@@ -8,27 +18,57 @@
 <h1 style="font-family:'Courier New'">Questionnaire</h1>
 <h2 style="font-family:'Courier New'">Answer the questions below regarding your feelings over the past 2 weeks.</h2>
 <body>
-<p> Are you:</p>
+<br><br><br>
+
 <br>
-<input type="radio" name="sex" value="male">Male<br>
-<input type="radio" name="sex" value="female">Female<br>
 <br>
-<p> How are you feeling? </p>
 <br>
-<input type="radio" name="emotion" value="happy">Happy<br>
-<input type="radio" name="emotion" value="tired">Tired<br>
-<input type="radio" name="emotion" value="sad">Sad<br>
+
+<form>
+    <p> Are you anxious:</p>
+    <input type="radio" name="choice" value="yes"> Yes<br>
+    <input type="radio" name="choice" value="no"> No<br>
+    <br>
+    <p> Are you REALLY anxious:</p> <br>
+    <input type="radio" name="choice2" value="yes"> Yes<br>
+    <input type="radio" name="choice2" value="no"> No<br>
+    <input type="button" id="submit" value="Show Selected Value">
+</form>
+
+<script>
+        const btn = document.querySelector('#submit');
+        // handle click button
+        btn.onclick = function () {
+            const rbs = document.querySelectorAll('input[name="choice"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue);
+            if (selectedValue == "yes"){
+             upAnxiety();
+             }
+            const rbs2 = document.querySelectorAll('input[name="choice2"]');
+            let selectedValue2;
+            for (const rb of rbs2) {
+                if (rb.checked) {
+                    selectedValue2 = rb.value;
+                    break;
+                }
+            }
+            //alert(selectedValue2);
+            if (selectedValue2 == "yes"){
+             upAnxiety();
+             }
+        };
+    </script>
+
 <br>
-<p> How often do you feel this way? </p>
 <br>
-<input type="radio" name="time" value="always">Almost always<br>
-<input type="radio" name="time" value="often">Often<br>
-<input type="radio" name="time" value="not often">Not very often<br>
-<br>
-<p> Do you ever feel like it is hard to do what you want to do because you are tired? </p><br>
-<input type="radio" name="tired" value="yes">Yes, quite often<br>
-<input type="radio" name="tired" value="no">Not really<br>
-<br>
-<button type="button" id="submit">Submit Form</button>
+<h2 id="demo" style="font-family:'Courier New'"></h2>
+<h2 id="demo2"style="font-family:'Courier New'"></h2>
 </body>
 </html>
