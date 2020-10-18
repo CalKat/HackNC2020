@@ -3,29 +3,39 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 .head {
-    color: blue
+    color: firebrick
 }
 p {
-    color: blueviolet
+    color: rgb(209, 5, 5);
+    font-size: xx-large;
+    font-weight: 2000;
+    line-height: 150px
 }
 .a {
-    background-color: orange
+    background-color: paleturquoise;
+
 }
 .b { 
-    background-color: orange
+    background-color: paleturquoise
 }
 .c {
-    background-color: orange
+    background-color: paleturquoise
 }
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 1400px
+    width: 1400;
+    height: 800;
+    LINE-HEIGHT:55px;
 }
 .h {
-    color: orange
+    color: firebrick;
+    font-size: 100px
+}
+.subheader {
+    color: darkblue
 }
 .button {
-    font-size: larger;
+    font-size: xx-large;
     padding: 10px;
     text-decoration: none;
     background-color: red;
@@ -34,5 +44,49 @@ p {
 }
 
 .button:hover {
+    background-color: lightseagreen
+}
+.button2 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button2:hover {
+    background-color: lightseagreen
+}
+.button3 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button3:hover {
+    background-color: lightseagreen
+}
+.button4 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button4:hover {
+    background-color: lightseagreen
+}
+.button5 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button5:hover {
     background-color: lightseagreen
 }
