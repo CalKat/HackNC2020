@@ -1,4 +1,5 @@
 body {
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif
 }
 .head {
@@ -16,18 +17,19 @@ p {
 .c {
     background-color: orange
 }
-.homework {
+.body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 1000px
+    width: 1400px
 }
 .h {
     color: orange
 }
 .button {
+    font-size: larger;
     padding: 10px;
     text-decoration: none;
-    background-color: whitesmoke;
-        color: royalblue;
+    background-color: red;
+        color: whitesmoke;
         border-radius: 2px;
 }
 
