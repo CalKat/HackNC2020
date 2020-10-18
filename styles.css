@@ -25,7 +25,7 @@ p {
     color: orange
 }
 .button {
-    font-size: larger;
+    font-size: xx-large;
     padding: 10px;
     text-decoration: none;
     background-color: red;
@@ -36,9 +36,53 @@ p {
 .button:hover {
     background-color: lightseagreen
 }
+.button2 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button2:hover {
+    background-color: lightseagreen
+}
+.button3 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button3:hover {
+    background-color: lightseagreen
+}
+.button4 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button4:hover {
+    background-color: lightseagreen
+}
+.button5 {
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration: none;
+    background-color: red;
+        color: whitesmoke;
+        border-radius: 2px;
+}
+.button5:hover {
+    background-color: lightseagreen
+}
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: lightgray;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -70,4 +114,4 @@ p {
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #999;}
