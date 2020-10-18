@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+.head {
+    color: blue
+}
+p {
+    color: blueviolet
+}
+.a {
+    background-color: orange
+}
+.b { 
+    background-color: orange
+}
+.c {
+    background-color: orange
+}
+.homework {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1000px
+}
+.h {
+    color: orange
+}
+.button {
+    padding: 10px;
+    text-decoration: none;
+    background-color: whitesmoke;
+        color: royalblue;
+        border-radius: 2px;
+}
+
+.button:hover {
+    background-color: lightseagreen
+}
